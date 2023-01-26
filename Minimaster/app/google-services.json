@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "553154692160",
+    "project_id": "coin-master-58d64",
+    "storage_bucket": "coin-master-58d64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553154692160:android:25b33f8c3f3a9d210fcba5",
+        "android_client_info": {
+          "package_name": "com.master.coin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553154692160-2atb57ck1hg109d2l2jihgoujogmf1bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9K0W7J6BUWNVoLnPbNIE7ftvSNR979jY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553154692160-2atb57ck1hg109d2l2jihgoujogmf1bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553154692160:android:d33b6032d9915f360fcba5",
+        "android_client_info": {
+          "package_name": "com.minicoin.minimaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553154692160-2atb57ck1hg109d2l2jihgoujogmf1bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9K0W7J6BUWNVoLnPbNIE7ftvSNR979jY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553154692160-2atb57ck1hg109d2l2jihgoujogmf1bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

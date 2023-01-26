@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+    //id 'top.niunaijun.blackobfuscator'
+}
+
+android {
+    namespace 'com.minicoin.minimaster'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.minicoin.minimaster"
+        minSdk 24
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+//BlackObfuscator {
+//    enabled true
+//    depth 2
+//    // The classes which need to be obfuscated
+//    obfClass = ["top.niunaijun", "com.master.coin"]
+//    // It will not obfuscate the classes that in blackClass
+//    blackClass = ["top.niunaijun.black"]
+//}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // TODO FRC
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-config-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // UI
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    //Hawk
+    implementation "com.orhanobut:hawk:2.0.1"
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    // OneSignal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation "com.appsflyer:af-android-sdk:6.9.0"
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+
+
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+}
